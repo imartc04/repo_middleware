@@ -1,0 +1,14 @@
+<launch>
+  <!-- Start my_node -->
+  <node
+    name="my_node"
+    pkg="prac1"
+    type="my_node_executable"
+    output="screen"
+  >
+    <!-- Arguments for my_node -->
+    <param name="param1" value="some_value"/>
+    <param name="param2" value="another_value"/>
+  </node>
+
+</launch>

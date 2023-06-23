@@ -1,0 +1,30 @@
+
+This package contains a simple text to speech(node_tts.py) and speech to text
+
+--------------- Requirements -------------
+Install package dependencies executing dependencies.sh script.
+If some error with the audio package exists try to install the next dependency
+
+sudo apt update
+sudo apt install portaudio19-dev
+
+
+--------- 1 Text to speech ------------
+
+This node listens for text in the /text topic. This text is then processed
+by the node and reproduced by one of your audio outputs
+
+-------------------- 1.1 How to use text to speech ------------------
+
+Execute tts node in one terminal : ros2 run prac1 node_tts.py
+
+Public some text in the /text topic :
+ros2 topic pub /text std_msgs/msg/String "data: 'Hello world from console'"
+
+
+-------------- 2 Speech to text --------------------
+
+This node just records the microphopne in intervals of 4 sconds and generate the text from the record. 
+
+To use it just run the node : ros2 run prac1 node_stt.py
+Then spoke to the mic and the interpreted words will appear in the console
