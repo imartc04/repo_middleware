@@ -1,6 +1,6 @@
 
 This package contains a simple text to speech(node_tts.py) and speech to text
-
+This package has been programmed with ROS2 Humble
 --------------- Requirements -------------
 Install package dependencies executing dependencies.sh script.
 If some error with the audio package exists try to install the next dependency
