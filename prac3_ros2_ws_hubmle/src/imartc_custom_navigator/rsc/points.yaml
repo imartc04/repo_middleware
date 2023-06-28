@@ -1,0 +1,28 @@
+- ID: 1
+  position:
+    x: 0.8
+    y: 1.88
+  orientation:
+    z: 0.5
+    w: 0.866
+- ID: 2
+  position:
+    x: 0.57
+    y: -0.64
+  orientation:
+    z: -0.2
+    w: 0.98
+- ID: 3
+  position:
+    x: 1.9
+    y: -0.5
+  orientation:
+    z: 0.0
+    w: 1.0
+- ID: 4
+  position:
+    x: -0.75
+    y: -2.0
+  orientation:
+    z: -0.866
+    w: 0.5

@@ -1,0 +1,8 @@
+# Request
+string point
+---
+# Result
+int32 result
+---
+# Feedback
+int32 dummy

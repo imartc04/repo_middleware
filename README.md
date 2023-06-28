@@ -78,7 +78,30 @@ Contains the package of the mask detection node
 The trained and used tensorflow model is in the demos folder
 How to use it : ros2 run mask_detector mask_detect_node.py
 
+# Prac 3 
 
+The objetive of this practice is to create a ROS2 action server and client and navigate with nav2 package making use of it in the action server. 
+The server client will send individual points to the action server as goals.
+The sever offers a service to cancell the process
+The version of ROS2 used is Humble
+
+## Workspaces involved
+
+custom_nav_interfaces
+imartc_custom_navigator
+
+## custom_nav_interfaces
+This package simply creates the action class used by client and server. The package of the custom navigator was not used to create also
+its action messages due mix action files with other code stuff generates several problems when compiling
+
+## imartc_custom_navigator
+Contains 2 nodes, one for the client and other for the server. Also contains a yaml file with the coordinates of points where to navigate and a launch file that launches everything automatically
+
+How to use it : 
+* Install nav2 packages https://navigation.ros.org/getting_started/index.html#installation 
+* Set env vars to load gazebo models export TURTLEBOT3_MODEL=waffle && export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:/opt/ros/humble/share/turtlebot3_gazebo/models 
+* Execute launcher ros2 launch imartc_custom_navigator custom_nav.launch.py
+* Call cancel service to stop the robot : ros2 service call /custom_nav_cancel std_srvs/srv/SetBool "{data: true}"
 
 
 
