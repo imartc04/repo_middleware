@@ -104,4 +104,21 @@ How to use it :
 * Call cancel service to stop the robot : ros2 service call /custom_nav_cancel std_srvs/srv/SetBool "{data: true}"
 
 
+# Prac robocomp 
+
+The objective of the practice is use the robocomp framework to move a simple reactive robot that avoids obstacles in a scene detecting them through a laser sensor.
+
+robocomp repository https://github.com/robocomp/robocomp
+
+Currently the last commits work with Qt6. In the documentation is said that only Ubuntu 20.04 and 20.10 are supported and for those versions there is no apt packages of Qt6 but for Qt5. The installation script has been modified to work in a repo commit before Qt6 was introduced. 
+
+
+How to use it : 
+
+* Launch rcis simulator with the scene : rcis ~/robocomp/files/innermodel/simpleworld.xml
+* Launch robot controller : python3 pracRobocomp/colision_avoid/src/col_avoid.py
+
+
+
+
 
