@@ -1,0 +1,14 @@
+import "/root/robocomp/interfaces/IDSLs/DifferentialRobot.idsl";
+import "/root/robocomp/interfaces/IDSLs/Laser.idsl";
+
+Component col_avoid
+{
+    Communications
+    {
+
+        requires DifferentialRobot, Laser;
+     
+    };
+    language python;
+};
+
